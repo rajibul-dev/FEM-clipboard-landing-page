@@ -55,12 +55,56 @@ h3 {
 }
 
 /* Links */
-a {
+a.link {
   color: var(--color-heading);
   font-weight: 500;
   text-decoration: none;
   transition: color 0.15s;
 }
-a:hover {
+a.link:hover {
   color: var(--color-primary);
+}
+
+/* Buttons */
+.btn {
+  line-height: 1;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 2rem 4rem;
+  transition: all 0.15s;
+
+  --color-inset-box-shadow--primary: hwb(171 15% 35%);
+  --color-outside-box-shadow--primary: rgba(38, 186, 164, 0.3);
+  --color-inset-box-shadow--primary__hover: hwb(171 20% 30%);
+
+  --color-inset-box-shadow--secondary: hwb(233 33% 14%);
+  --color-outside-box-shadow--secondary: rgba(0, 0, 0, 0.15);
+  --color-inset-box-shadow--secondary__hover: hwb(233 43% 14%);
+}
+.btn--primary {
+  color: #fff;
+  background: var(--color-primary);
+  box-shadow: inset 0 -4px 0 var(--color-inset-box-shadow--primary),
+    0 10px 16px var(--color-outside-box-shadow--primary);
+}
+.btn--secondary {
+  color: #fff;
+  background: var(--color-secondary);
+  box-shadow: inset 0 -4px 0 var(--color-inset-box-shadow--secondary),
+    0 10px 16px var(--color-outside-box-shadow--secondary);
+}
+.btn--primary:hover {
+  background: hwb(171 30% 22%);
+  box-shadow: inset 0 -4px 0 var(--color-inset-box-shadow--primary__hover),
+    0 10px 16px var(--color-outside-box-shadow--primary);
+}
+.btn--secondary:hover {
+  background: hwb(233 48% 0%);
+  box-shadow: inset 0 -4px 0 var(--color-inset-box-shadow--secondary__hover),
+    0 10px 16px var(--color-outside-box-shadow--secondary);
 }
