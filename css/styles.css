@@ -9,10 +9,10 @@
 
 /* Variables */
 :root {
-  --color-primary: hsl(171, 66%, 44%);
-  --color-secondary: hsl(233, 100%, 69%);
-  --color-heading: hsl(210, 10%, 33%);
-  --color-body: hsl(201, 11%, 66%);
+  --color-primary: #26baa4;
+  --color-secondary: #6173ff;
+  --color-heading: #4c545d;
+  --color-body: #9fabb2;
 }
 
 /* Typography */
@@ -52,4 +52,15 @@ h3 {
 
 .more-line-height {
   line-height: 1.7;
+}
+
+/* Links */
+a {
+  color: var(--color-heading);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover {
+  color: var(--color-primary);
 }
