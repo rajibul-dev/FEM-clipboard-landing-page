@@ -108,3 +108,21 @@ a.link:hover {
   box-shadow: inset 0 -4px 0 var(--color-inset-box-shadow--secondary__hover),
     0 10px 16px var(--color-outside-box-shadow--secondary);
 }
+
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 500px) {
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+}
