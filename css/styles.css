@@ -32,6 +32,7 @@ h2,
 h3 {
   color: var(--color-heading);
   font-weight: 600;
+  line-height: 1.3;
 }
 h1 {
   font-size: 4.4rem;
@@ -39,7 +40,7 @@ h1 {
 }
 h2 {
   font-size: 3.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 h3 {
   font-size: 2.4rem;
@@ -52,6 +53,9 @@ h3 {
 
 .more-line-height {
   line-height: 1.7;
+}
+.center-text {
+  text-align: center;
 }
 
 /* Links */
@@ -125,4 +129,14 @@ a.link:hover {
   .grid--3-cols {
     grid-template-columns: 1fr;
   }
+}
+
+/* Section headings */
+.block__header {
+}
+.block__heading {
+}
+.block__heading-para {
+  max-width: 60ch;
+  margin-inline: auto;
 }
