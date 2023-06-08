@@ -156,8 +156,22 @@ ul li:last-child {
 .feature li {
   margin-bottom: 5rem;
 }
-.feature__heading {
+.feature--flexed {
+  gap: 5rem;
+}
+.feature--flexed li {
+  margin-bottom: 0;
 }
 .feature__para {
   line-height: 1.8;
+}
+.feature__icon {
+  width: 6rem;
+  height: 6rem;
+}
+.feature__icon {
+  margin-bottom: 3rem;
+}
+.feature--flexed .feature__heading {
+  margin-bottom: 1.8rem;
 }
