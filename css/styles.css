@@ -175,3 +175,42 @@ ul li:last-child {
 .feature--flexed .feature__heading {
   margin-bottom: 1.8rem;
 }
+
+/* Section blocks */
+.block {
+  padding: 6.4rem;
+}
+.container {
+  max-width: 120rem;
+  margin-inline: auto;
+}
+
+/* Hero section */
+.block--hero {
+  background-image: url(/images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  height: 80svh;
+  padding-top: 12rem;
+}
+.icon--logo {
+  display: table;
+  width: 12rem;
+  height: 12rem;
+  margin-inline: auto;
+}
+.h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.block--hero__p {
+  font-size: 2.1rem;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 55ch;
+}
+.btn-flex {
+  display: flex;
+  margin-top: 5rem;
+  gap: 2rem;
+  justify-content: center;
+}
