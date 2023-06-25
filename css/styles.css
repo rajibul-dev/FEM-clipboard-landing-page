@@ -189,7 +189,6 @@ ul li:last-child {
 .block--hero {
   background-image: url(/images/bg-header-desktop.png);
   background-repeat: no-repeat;
-  height: 80svh;
   padding-top: 12rem;
 }
 .icon--logo {
