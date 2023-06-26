@@ -69,6 +69,12 @@ a.link:hover {
   color: var(--color-primary);
 }
 
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 /* Buttons */
 .btn {
   line-height: 1;
@@ -80,6 +86,7 @@ a.link:hover {
   font-size: 1.8rem;
   font-weight: 500;
   padding: 2rem 4rem;
+  text-align: center;
   transition: all 0.15s;
 
   --color-inset-box-shadow--primary: hwb(171 15% 35%);
@@ -113,6 +120,14 @@ a.link:hover {
     0 10px 16px var(--color-outside-box-shadow--secondary);
 }
 
+@media screen and (max-width: 490px) {
+  .btn {
+    font-size: 2.2rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
 /* Grid */
 .grid {
   display: grid;
@@ -139,6 +154,14 @@ a.link:hover {
 .block__heading-para {
   max-width: 60ch;
   margin-inline: auto;
+}
+@media screen and (max-width: 490px) {
+  .block__heading-para {
+    font-size: 2.2rem;
+  }
+  .block__heading {
+    font-size: 3.8rem;
+  }
 }
 
 /* Lists */
@@ -178,11 +201,12 @@ ul li:last-child {
 
 /* Section blocks */
 .block {
-  padding: 6.4rem;
+  padding: 6.4rem 0;
 }
 .container {
   max-width: 120rem;
   margin-inline: auto;
+  padding-inline: 8%;
 }
 
 /* Hero section */
@@ -190,6 +214,7 @@ ul li:last-child {
   background-image: url(/images/bg-header-desktop.png);
   background-repeat: no-repeat;
   padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 .icon--logo {
   display: table;
@@ -212,4 +237,18 @@ ul li:last-child {
   margin-top: 5rem;
   gap: 2rem;
   justify-content: center;
+}
+
+@media screen and (max-width: 490px) {
+  .btn-flex {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .block--hero__p {
+    line-height: 1.7;
+  }
 }
