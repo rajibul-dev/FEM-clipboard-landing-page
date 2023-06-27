@@ -275,6 +275,11 @@ ul li:last-child {
     line-height: 1.7;
   }
 }
+@media screen and (max-width: 375px) {
+  .block--hero {
+    background-image: url(/images/bg-header-mobile.png);
+  }
+}
 
 /* Feature section */
 .block--feature {
