@@ -408,6 +408,9 @@ ul li:last-child {
 }
 
 @media screen and (max-width: 730px) {
+  .footer {
+    padding-top: 6.4rem;
+  }
   .container--footer {
     flex-direction: column;
     gap: 6rem;
@@ -424,5 +427,13 @@ ul li:last-child {
   .footer .social-icon {
     width: 3.2rem;
     height: 3.2rem;
+  }
+
+  /* Reorder the footer links */
+  .footer__links li:nth-child(4) {
+    grid-row: 2 / 3;
+  }
+  .footer__links li:nth-child(5) {
+    grid-row: 4 / 5;
   }
 }
