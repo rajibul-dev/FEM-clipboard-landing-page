@@ -191,14 +191,22 @@ ul li:last-child {
   line-height: 1.8;
 }
 .feature__icon {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
+}
+.icon__preview {
+  transform: scale(1.4);
 }
 .feature__icon {
   margin-bottom: 3rem;
 }
 .feature--flexed .feature__heading {
   margin-bottom: 1.8rem;
+}
+@media screen and (max-width: 490px) {
+  .feature--flexed {
+    gap: 8rem;
+  }
 }
 
 /* Section blocks */
@@ -264,6 +272,10 @@ ul li:last-child {
 }
 
 /* Feature section */
+.block--feature {
+  padding-top: 6.4rem;
+  padding-bottom: 9.6rem;
+}
 .grid--feature {
   align-items: center;
   grid-template-columns: 1.8fr 1fr;
@@ -300,4 +312,30 @@ ul li:last-child {
     text-align: center;
     margin-inline: auto;
   }
+}
+
+/* Devices section */
+.devices-img {
+  display: table;
+  margin-inline: auto;
+  width: 65vw;
+}
+
+@media screen and (max-width: 730px) {
+  .devices-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .container--devices {
+    padding-inline: 5%;
+  }
+}
+.block--devices {
+  padding-bottom: 3.2rem;
+}
+
+/* 3 col feature */
+.block--3-col-feature {
+  padding-top: 3.2rem;
 }
