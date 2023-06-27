@@ -339,3 +339,21 @@ ul li:last-child {
 .block--3-col-feature {
   padding-top: 3.2rem;
 }
+
+/* Brands section */
+.block--brands {
+  padding: 9.6rem 0;
+}
+.container--brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 730px) {
+  .container--brands {
+    flex-direction: column;
+    justify-content: center;
+    gap: 8rem;
+  }
+}
