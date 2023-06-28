@@ -1,5 +1,7 @@
 # Frontend Mentor - Clipboard landing page
 
+## [Go to my solution live site](https://fem-clipboard-raji.netlify.app/)
+
 ![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
